@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Player</title>
+</head>
+
+<body>
+
+  <h1>Tinana Hiri</h1>
+  <main>
+    <form class="status">
+      <h2>Pontuação</h2><h3 class="nivel">Nivel: <span id="nivel"></span></h3>
+      
+      <div class="inputs">
+        <label for="vitalidade">Vitalidade</label>
+        <input type="number" value="18" name="vitalidade" onclick="calcularVitalidade(this.value)" id="vitalidade">
+      </div>
+      <div class="inputs">
+        <label for="mente">Mente</label>
+        <input type="number" value="13" name="mente" onclick="calcularMente(this.value)" id="mente">
+      </div>
+      <div class="inputs">
+        <label for="forca">Forca</label>
+        <input type="number" value="17" name="forca" onclick="calcularForca(this.value)" id="forca">
+      </div>
+      <div class="inputs">
+        <label for="agilidade">Agilidade</label>
+        <input type="number" value="13" name="agilidade" onclick="calcularAgilidade(this.value)" id="agilidade">
+      </div>
+      <div class="inputs">
+        <label for="estamina">Estamina</label>
+        <input type="number" value="15" name="estamina" onclick="calcularEstamina(this.value)" id="estamina">
+      </div>
+      <div class="inputs">
+        <label for="inteligencia">Inteligência</label>
+        <input type="number" value="18" name="inteligencia" onclick="calcularInteligencia(this.value)" id="inteligencia">
+      </div>
+      <div class="inputs">
+        <label for="destreza">Destreza</label>
+        <input type="number" value="14" name="destreza" onclick="calcularDestreza(this.value)" id="destreza">
+      </div>
+      <div class="inputs">
+        <label for="XP">XP</label>
+        <input type="number" value="42" name="XP" onclick="calcularNivel(this.value)" id="XP">
+      </div>
+    </form>
+
+    <aside>
+      <h2>Valores</h2>
+      <div class="valorFinal">
+        <span>Vitalidade:</span><span id="vit">100</span><span>vida</span>
+      </div>
+      <div class="valorFinal">
+        <span>Mente:</span><span id="men">100</span><span>mana</span>
+      </div>
+      <div class="valorFinal">
+        <span>Estamina:</span><span id="esta">100</span><span>energia</span>
+      </div>
+      <div class="valorFinal">
+        <span>Inteligência:</span><span id="int">100</span><span>int</span>
+      </div>
+      <div class="valorFinal">
+        <span>Carga-Max:</span><span id="des">100</span><span>kg</span>
+      </div>
+      <div class="inputs">
+        <label for="gold">Gold</label>
+        <input type="text" value="195" name="gold" id="gold">
+      </div>
+    </aside>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
